@@ -1,0 +1,1 @@
+Este é o meu projeto individual que estou desenvolvendo no 1º semestre de Ciências da Computação na São Paulo Tech School (SPtech)
