@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rye&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <div class="logo">
+                <a href="../html/inicio.html">Red <span class="logo-red">Dead</span> Web</a>
+            </div>
+            <nav class="nav-links">
+                <a href="#historia">HISTORIA</a>
+                <a href="#quiz">QUIZ DE HONRA</a>
+                <a href="#reflexao">REFLEXÃO</a>
+                <a href="../html/tela_login.html" class="entrar">ENTRAR</a>
+            </nav>
+        </section>
+    </header>
+
+    <div class="cadastro">
+        <p class="subtitulo-cadastro">BEM VINDO A GANGUE</p>
+        <h1>Cadastro</h1>
+
+        <div class="caixa">
+            <label for="ipt_nome">NOME</label>
+            <input type="text" id="ipt_nome" placeholder="Seu nome">
+
+            <label for="ipt_email">E-MAIL</label>
+            <input type="text" id="ipt_email" placeholder="seuemail@exemplo.com">
+
+            <label for="ipt_senha">SENHA</label>
+            <input type="password" id="ipt_senha" placeholder="******">
+
+            <label for="ipt_confSenha">CONFIRMAR SENHA</label>
+            <input type="password" id="ipt_confSenha" placeholder="******">
+            
+            <label for="regra_senha" class="regra_senha">
+                <p id="regraTamanho">- Conter de 6 a 12 caracteres </p>
+                <p id="regraNumero">- Pelo menos um número</p>
+                <p id="regraMinuscula">- Pelo menos uma letra minúscula (a-z)  </p>
+                <p id="regraMaiuscula">- Pelo menos uma letra maiúscula (A-Z)  </p>
+                <p id="regraEspecial">- Pelo menos um caractere especial (!@#$%&) </p>
+            </label>
+
+            <br><button onclick="cadastrar()" class="button-cadastrar">Cadastrar</button>
+
+            <p class="link-entrar">
+                Já é um Cowboy? <a href="tela_login.html" class="entrar">Entrar</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+<script src="../js/cadastro.js"></script>
+
+</html>

@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rye', serif;
+    background-color: black;
+    color: white;
+}
+
+/* Nav */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 1px solid #000;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #262629;
+    color: white;
+    padding: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.nav-links a:hover {
+    color: #a6a6a69f;
+}
+
+.nav-links .entrar {
+    color: red;
+}
+
+.nav-links .entrar:hover {
+    color: rgba(255, 0, 0, 0.459);
+}
+
+.logo-red {
+    color: red;
+}
+
+.logo-red:hover {
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.logo a:hover {
+    color: rgba(255, 0, 0, 0.468);
+}
+
+@media (max-width: 800px) {
+    .header {
+        font-size: 12px;
+    }
+}
+
+/* Tela de inicio */
+
+.section-content {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 120px 7vw 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 15px;
+}
+
+.hero h1 {
+    margin: 12px 0 20px;
+    font-size: 50px;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+
+/* Tela de Login */
+
+.login {
+    width: 300px;
+    margin: 100px auto;
+}
+
+.login h1 {
+    font-size: 24px;
+    margin: 10px 0 30px;
+    color: white;
+}
+
+.subtitulo {
+    color: red;
+    font-size: 12px;
+}
+
+.caixa {
+    background-color: #262629;
+    padding: 20px;
+}
+
+.login label {
+    display: block;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.caixa span{
+    font-size: 12px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid #444;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: red;
+    font-family: 'Rye', serif;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 0, 0.586);
+    color: black;
+}
+
+.link {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.link-cadastro {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.criar-conta {
+    color: white;
+    text-decoration: none;
+}
+
+.criar-conta:hover {
+    color: red;
+}
+
+/* Tela de cadastro*/
+
+.cadastro {
+    width: 300px;
+    margin: 60px auto;
+}
+
+.cadastro h1 {
+    font-size: 24px;
+    margin: 10px 0 30px;
+    color: white;
+}
+
+.subtitulo-cadastro {
+    color: red;
+    font-size: 12px;
+}
+
+.regra_senha{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.link-entrar {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.entrar {
+    color: white;
+    text-decoration: none;
+}
+
+.entrar:hover {
+    color: red;
+}
+
+
+.cadastro label {
+    display: block;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: white;
+}

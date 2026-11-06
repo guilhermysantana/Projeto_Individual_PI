@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <section>
+      <div class="logo">
+        <a href="../html/inicio.html">Red <span class="logo-red">Dead</span> Web</a>
+      </div>
+      <nav class="nav-links">
+        <a href="#historia">HISTORIA</a>
+        <a href="#quiz">QUIZ DE HONRA</a>
+        <a href="#reflexao">REFLEXÃO</a>
+        <a href="../html/tela_login.html" class="entrar">ENTRAR</a>
+      </nav>
+    </section>
+  </header>
+
+  <div class="login">
+    <p class="subtitulo">BEM-VINDO DE VOLTA</p>
+    <h1>Entrar</h1>
+
+    <div class="caixa">
+      <label for="ipt_email">E-MAIL</label>
+      <input type="text" id="ipt_email" placeholder="seuemail@exemplo.com">
+
+      <label for="ipt_senha">SENHA</label>
+      <input type="password" id="ipt_senha" placeholder="******">
+
+      <span class="erro" id="erro"></span>
+
+      <button onclick="entrar()" class="button-entrar">ENTRAR</button>
+
+      <p class="link-cadastro">
+        Novo por aqui? <a href="tela_cadastro.html" class="criar-conta">Criar conta</a>
+      </p>
+    </div>
+  </div>
+</body>
+<script src="../js/login.js"></script>
+</html>
