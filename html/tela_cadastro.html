@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
@@ -34,23 +34,27 @@
 
         <div class="caixa">
             <label for="ipt_nome">NOME</label>
+            <p id="erro_nome"></p>
             <input type="text" id="ipt_nome" placeholder="Seu nome">
 
             <label for="ipt_email">E-MAIL</label>
+            <p id="erro_email"></p>
             <input type="text" id="ipt_email" placeholder="seuemail@exemplo.com">
 
             <label for="ipt_senha">SENHA</label>
-            <input type="password" id="ipt_senha" placeholder="******">
+            <p id="erro_senha"></p>
+            <input onkeyup="senha()" type="password" id="ipt_senha" placeholder="******">
 
             <label for="ipt_confSenha">CONFIRMAR SENHA</label>
+            <p id="erro_confsenha"></p>
             <input type="password" id="ipt_confSenha" placeholder="******">
-            
+
             <label for="regra_senha" class="regra_senha">
-                <p id="regraTamanho">- Conter de 6 a 12 caracteres </p>
-                <p id="regraNumero">- Pelo menos um número</p>
-                <p id="regraMinuscula">- Pelo menos uma letra minúscula (a-z)  </p>
-                <p id="regraMaiuscula">- Pelo menos uma letra maiúscula (A-Z)  </p>
-                <p id="regraEspecial">- Pelo menos um caractere especial (!@#$%&) </p>
+                <p id="regraTamanho"></p>
+                <p id="regraNumero"></p>
+                <p id="regraMinuscula"></p>
+                <p id="regraMaiuscula"></p>
+                <p id="regraEspecial"></p>
             </label>
 
             <br><button onclick="cadastrar()" class="button-cadastrar">Cadastrar</button>

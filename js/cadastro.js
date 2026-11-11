@@ -1,45 +1,65 @@
 let temTamanho = false
+let temEspecial = false
 let temMaiuscula = false
 let temMinuscula = false
-
-
-// '<span style="color: #26b14d;">
-// '<span style="color: #eb352f;">
+let temNumero = false
 
 function cadastrar() {
-    let nome_usuario = ipt_nome.value
-    let email_usuario = ipt_email.value
-    let senha_usuario = ipt_senha.value    
+    let senha_usuario = ipt_senha.value
     let confirmacao_senha = ipt_confSenha.value
 
-    let temEspecial = false
-    let temNumero = false
-    let senhaConfirmada = false
+    erro_nome.innerHTML = ''
+    erro_email.innerHTML = ''
+    erro_senha.innerHTML = ''
+    erro_confsenha.innerHTML = ''
     
+    let valido = true
+
 
     // Verificação de vazio
-    if(ipt_nome.value == ''){
-        alert('Preencha com seu nome')
-        return
-    } else if(ipt_email.value == '') {
-        alert('Preencha com seu email')
-        return
-    } else if(ipt_senha.value == '') {
-        alert('Crie uma senha')
-        return
-    } else if (ipt_confSenha.value == '') {
-        alert('Confirme sua senha')
+    if (ipt_nome.value == '') {
+        erro_nome.innerHTML = '<p style="color: #eb352f;">*Preencha com seu nome</p>'
+        valido = false
+    }
+
+    if (ipt_email.value == '') {
+        erro_email.innerHTML = '<p style="color: #eb352f;">*Preencha com seu email</p>'
+        valido = false
+    }
+
+    if (ipt_senha.value == '') {
+        erro_senha.innerHTML = '<p style="color: #eb352f;">*Crie uma senha</p>'
+        valido = false
+    }
+
+    if (ipt_confSenha.value == '') {
+        erro_confsenha.innerHTML = '<p style="color: #eb352f;">*Confirme sua senha</p>'
+        valido = false
+    }
+
+    if (valido == false) {
         return
     }
+
+    senha()
 
     // Senhas iguais
-    if(senha_usuario != confirmacao_senha){
-        senhaConfirmada = false
-        alert('Senhas diferentes')
-    } else{
-        senhaConfirmada = true
+    if (senha_usuario != confirmacao_senha) {
+        erro_confsenha.innerHTML = '<p style="color: #eb352f;">*As senhas são diferentes</p>'
+        return
     }
 
+    // Se tudo estiver certo
+    if (temTamanho && temNumero && temMinuscula && temMaiuscula && temEspecial) {
+        window.location.href = '../telas/inicio.html'
+    }
+}
+
+function senha() {
+    let senha_usuario = ipt_senha.value
+
+    temNumero = false
+    temEspecial = false
 
     // Regra de tamanho
     if (senha_usuario.length < 6 || senha_usuario.length > 12) {
@@ -50,10 +70,9 @@ function cadastrar() {
         regraTamanho.innerHTML = '<p style="color: #26b14d;">- Conter de 6 a 12 caracteres</p>'
     }
 
-
     // Regra de número
-    for (i = 0; i < senha_usuario.length; i++) {
-        if('0123456789'.includes(senha_usuario[i])) {
+    for (let i = 0; i < senha_usuario.length; i++) {
+        if ('0123456789'.includes(senha_usuario[i])) {
             temNumero = true
         }
     }
@@ -64,7 +83,6 @@ function cadastrar() {
         regraNumero.innerHTML = '<p style="color: #eb352f;">- Pelo menos um número (0-9)</p>'
     }
 
-
     // Regra de letra minúscula
     if (senha_usuario == senha_usuario.toUpperCase()) {
         temMinuscula = false
@@ -74,8 +92,7 @@ function cadastrar() {
         regraMinuscula.innerHTML = '<p style="color: #26b14d;">- Pelo menos uma letra minúscula (a-z)</p>'
     }
 
-
-    // Regra de letra maiúscula 
+    // Regra de letra maiúscula
     if (senha_usuario == senha_usuario.toLowerCase()) {
         temMaiuscula = false
         regraMaiuscula.innerHTML = '<p style="color: #eb352f;">- Pelo menos uma letra maiúscula (A-Z)</p>'
@@ -84,10 +101,9 @@ function cadastrar() {
         regraMaiuscula.innerHTML = '<p style="color: #26b14d;">- Pelo menos uma letra maiúscula (A-Z)</p>'
     }
 
-
     // Regra de caractere especial
-    for (i = 0; i < senha_usuario.length; i++) {
-        if('!@#$%&'.includes(senha_usuario[i])) {
+    for (let i = 0; i < senha_usuario.length; i++) {
+        if ('!@#$%&'.includes(senha_usuario[i])) {
             temEspecial = true
         }
     }
@@ -97,8 +113,4 @@ function cadastrar() {
     } else {
         regraEspecial.innerHTML = '<p style="color: #eb352f;">- Pelo menos um caractere especial (!@#$%&)</p>'
     }
-
-    // Se tudo estiver certo
-    if(senhaConfirmada == true && temEspecial == true && temTamanho == true && temMaiuscula == true && temMinuscula == true && temNumero == true)
-        window.location.href = '../telas/inicio.html'
 }
