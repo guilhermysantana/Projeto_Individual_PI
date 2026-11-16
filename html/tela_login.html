@@ -19,7 +19,8 @@
         <a href="../html/inicio.html">Red <span class="logo-red">Dead</span> Web</a>
       </div>
       <nav class="nav-links">
-        <a href="#historia">HISTORIA</a>
+        <a href="../html/tela_personagens.html">PERSONAGENS</a>
+        <a href="../html/tela_historia.html">HISTORIA</a>
         <a href="#quiz">QUIZ DE HONRA</a>
         <a href="#reflexao">REFLEXÃO</a>
         <a href="../html/tela_login.html" class="entrar">ENTRAR</a>
@@ -34,9 +35,12 @@
     <div class="caixa">
       <label for="ipt_email">E-MAIL</label>
       <input type="text" id="ipt_email" placeholder="seuemail@exemplo.com">
+      <p id="erro_email"></p>
 
-      <label for="ipt_senha">SENHA</label>
+      <label for="ipt_senha" id="senha">SENHA</label>
       <input type="password" id="ipt_senha" placeholder="******">
+      <p id="erro_senha"></p>
+
 
       <span class="erro" id="erro"></span>
 
@@ -49,4 +53,5 @@
   </div>
 </body>
 <script src="../js/login.js"></script>
+
 </html>

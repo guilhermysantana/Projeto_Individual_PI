@@ -45,7 +45,7 @@ function cadastrar() {
 
     // Senhas iguais
     if (senha_usuario != confirmacao_senha) {
-        erro_confsenha.innerHTML = '<p style="color: #eb352f;">*As senhas são diferentes</p>'
+        erro_confsenhaButton.innerHTML = '<p style="color: #eb352f;">*As senhas são diferentes</p>'
         return
     }
 

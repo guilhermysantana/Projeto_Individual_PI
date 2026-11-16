@@ -20,7 +20,8 @@
                 <a href="../html/inicio.html">Red <span class="logo-red">Dead</span> Web</a>
             </div>
             <nav class="nav-links">
-                <a href="#historia">HISTORIA</a>
+                <a href="../html/tela_personagens.html">PERSONAGENS</a>
+                <a href="../html/tela_historia.html">HISTORIA</a>
                 <a href="#quiz">QUIZ DE HONRA</a>
                 <a href="#reflexao">REFLEXÃO</a>
                 <a href="../html/tela_login.html" class="entrar">ENTRAR</a>
@@ -34,20 +35,20 @@
 
         <div class="caixa">
             <label for="ipt_nome">NOME</label>
-            <p id="erro_nome"></p>
             <input type="text" id="ipt_nome" placeholder="Seu nome">
-
+            <p id="erro_nome"></p>
+            
             <label for="ipt_email">E-MAIL</label>
-            <p id="erro_email"></p>
             <input type="text" id="ipt_email" placeholder="seuemail@exemplo.com">
+            <p id="erro_email"></p>
 
             <label for="ipt_senha">SENHA</label>
-            <p id="erro_senha"></p>
             <input onkeyup="senha()" type="password" id="ipt_senha" placeholder="******">
+            <p id="erro_senha"></p>
 
             <label for="ipt_confSenha">CONFIRMAR SENHA</label>
-            <p id="erro_confsenha"></p>
             <input type="password" id="ipt_confSenha" placeholder="******">
+            <p id="erro_confsenha"></p>
 
             <label for="regra_senha" class="regra_senha">
                 <p id="regraTamanho"></p>
@@ -58,7 +59,7 @@
             </label>
 
             <br><button onclick="cadastrar()" class="button-cadastrar">Cadastrar</button>
-
+            <p id="erro_confsenhaButton"></p>
             <p class="link-entrar">
                 Já é um Cowboy? <a href="tela_login.html" class="entrar">Entrar</a>
             </p>
