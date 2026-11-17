@@ -124,14 +124,13 @@ body {
 }
 
 .section-sobre h2 {
-    font-family: Georgia, serif;
+    font-family: 'Rye', sans-serif;
     font-size: 36px;
     margin: 0 0 15px;
 }
 
 .sobre {
     display: flex;
-    align-items: flex-start;
     gap: 40px;
     margin-top: 40px;
 }
@@ -184,7 +183,7 @@ body {
 }
 
 .sobre-direita {
-    width: 45%;
+    width: 35%;
 }
 
 .capa {
@@ -233,6 +232,7 @@ body {
     letter-spacing: 1px;
     margin: 0;
 }
+
 
 /* Tela de personagens */
 
@@ -307,6 +307,11 @@ body {
     border: 1px solid #333;
     border-radius: 4px;
     overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+.card:hover {
+    border-color: red;
 }
 
 .card img {
@@ -345,6 +350,138 @@ body {
     margin: 0;
 }
 
+/* Mapa */
+
+.section-mapa {
+    background-color: #1a1616;
+    color: white;
+    padding: 80px 7vw;
+}
+
+.section-mapa h2 {
+    font-family: 'Rye', sans-serif;
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.mapa {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.mapa img {
+    width: 50%;
+    border-radius: 4px;
+    border: 1px solid #333;
+    display: block;
+}
+
+.lista-estados {
+    width: 40%;
+    font-family: Arial, sans-serif;
+}
+
+.estado {
+    border-left: 2px solid red;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.estado h3 {
+    font-family: 'Rye', sans-serif;
+    font-size: 20px;
+    color: #f0e0b8;
+    margin: 0 0 5px;
+}
+
+.estado p {
+    color: #b8a98f;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Cidades */
+
+.section-cidades {
+    background-color: #111;
+    color: white;
+    padding: 80px 7vw;
+}
+
+.section-cidades h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.intro {
+    font-family: Arial, sans-serif;
+    color: #b8a98f;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 25px 0 0;
+}
+
+.lista-cidades {
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.cidade {
+    background-color: #1a1616;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+.cidade:hover {
+    border-color: red;
+}
+
+.cidade img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.cidade-texto {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.cidade-texto h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: #f0e0b8;
+    margin: 0 0 8px;
+}
+
+.cidade-texto .estado-cidade {
+    color: red;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 0 0 12px;
+}
+
+.cidade-texto .linha {
+    margin: 0 auto 15px;
+}
+
+.cidade-texto p {
+    color: #b8a98f;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
 
 /* Tela de Login */
 
