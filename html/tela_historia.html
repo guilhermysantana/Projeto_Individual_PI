@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personagens</title>
+    <title>Historia</title>
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@
 
             <div class="carrossel">
 
-                <div class="swiper">
+                <div class="swiper swiper-personagens">
                     <div class="swiper-wrapper">
 
                         <div class="card swiper-slide">
@@ -176,17 +176,14 @@
                                     feitos pelos adultos ao seu redor.</p>
                             </div>
                         </div>
-
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
+                <div class="swiper-button-prev seta-personagens-prev"></div>
+                <div class="swiper-button-next seta-personagens-next"></div>
             </div>
         </div>
     </section>
-    <script src="../js/personagens.js"></script>
 
     <section class="section-mapa">
 
@@ -242,113 +239,135 @@
         <p class="intro">Cada cidade do mapa tem sua própria lei, seu próprio sotaque e seu próprio jeito de mentir. Da
             lama de Valentine ao asfalto de Saint Denis, é ali que a gangue encontra trabalho — e problemas.</p>
 
-        <div class="lista-cidades">
+        <div class="carrossel">
 
-            <div class="cidade">
-                <img src="../img/SaintDenis.jpg" alt="Saint Denis">
-                <div class="cidade-texto">
-                    <h3>Saint Denis</h3>
-                    <p class="estado-cidade">— LEMOYNE —</p>
-                    <div class="linha"></div>
-                    <p>Inspirada em Nova Orleans, essa metrópole industrializada simboliza o fim da era dos fora-da-lei
-                        e a chegada da modernidade. Com bondes elétricos, mansões luxuosas e fábricas poluídas, a cidade
-                        tem uma força policial implacável e ruas sempre lotadas. </p>
+            <div class="swiper swiper-cidades">
+                <div class="swiper-wrapper">
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/SaintDenis.jpg" alt="Saint Denis">
+                        <div class="cidade-texto">
+                            <h3>Saint Denis</h3>
+                            <p class="estado-cidade">— LEMOYNE —</p>
+                            <div class="linha"></div>
+                            <p>Inspirada em Nova Orleans, essa metrópole industrializada simboliza o fim da era dos
+                                fora-da-lei
+                                e a chegada da modernidade. Com bondes elétricos, mansões luxuosas e fábricas poluídas,
+                                a cidade
+                                tem uma força policial implacável e ruas sempre lotadas. </p>
+                        </div>
+                    </div>
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/Valentine.jpg" alt="Valentine">
+                        <div class="cidade-texto">
+                            <h3>Valentine</h3>
+                            <p class="estado-cidade">— NEW HANOVER —</p>
+                            <div class="linha"></div>
+                            <p>Valentine é o retrato clássico do Velho Oeste, com ruas lamacentas, leilões de gado e
+                                movimento
+                                constante. É a primeira grande cidade que o jogador explora, sendo famosa por suas
+                                brigas de bar
+                                e pela presença constante de caubóis e fora-da-lei. </p>
+                        </div>
+                    </div>
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/Rhodes.jpg" alt="Rhodes">
+                        <div class="cidade-texto">
+                            <h3>Rhodes</h3>
+                            <p class="estado-cidade">— LEMOYNE —</p>
+                            <div class="linha"></div>
+                            <p>Marcada pela terra vermelha e pelo calor do sul, Rhodes carrega as cicatrizes da Guerra
+                                Civil
+                                Americana. A cidade parece tranquila, mas vive sob a tensão de uma rivalidade sangrenta
+                                entre
+                                duas famílias ricas da região: os Gray e os Braithwaite.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/Strawberry.jpg" alt="Strawberry">
+                        <div class="cidade-texto">
+                            <h3>Strawberry</h3>
+                            <p class="estado-cidade">— WEST ELIZABETH —</p>
+                            <div class="linha"></div>
+                            <p>Escondida entre as montanhas, Strawberry é uma charmosa vila madeireira cortada por um
+                                riacho.
+                                Seu prefeito tenta transformá-la em um destino turístico de luxo, motivo pelo qual a
+                                cidade não
+                                possui nenhum saloon.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/Annesburg.jpg" alt="Annesburg ">
+                        <div class="cidade-texto">
+                            <h3>Annesburg </h3>
+                            <p class="estado-cidade">— NEW HANOVER —</p>
+                            <div class="linha"></div>
+                            <p>Um retrato duro da revolução industrial na fronteira. Annesburg vive exclusivamente da
+                                mineração
+                                de carvão, com céu cinzento, água poluída e operários trabalhando em condições precárias
+                                sob o
+                                domínio de uma mineradora gananciosa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/Blackwater.jpg" alt="Blackwater ">
+                        <div class="cidade-texto">
+                            <h3>Blackwater</h3>
+                            <p class="estado-cidade">— WEST ELIZABETH —</p>
+                            <div class="linha"></div>
+                            <p>Uma cidade portuária em rápida modernização, misturando prédios de tijolos com o estilo
+                                rústico
+                                do oeste. É o palco do famoso assalto que deu errado antes do jogo começar, ficando
+                                inacessível
+                                para Arthur Morgan durante a campanha principal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/Armadillo.jpg" alt="Armadillo">
+                        <div class="cidade-texto">
+                            <h3>Armadillo</h3>
+                            <p class="estado-cidade">— NEW AUSTIN —</p>
+                            <div class="linha"></div>
+                            <p>Cenário clássico do primeiro jogo, Armadillo aparece em RDR2 devastada por um surto
+                                brutal de
+                                cólera. Com covas abertas e poucos moradores sobreviventes, a cidade desértica tem um
+                                clima
+                                desolado e melancólico.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cidade swiper-slide">
+                        <img src="../img/Tumbleweed.jpg" alt="Tumbleweed">
+                        <div class="cidade-texto">
+                            <h3>Tumbleweed</h3>
+                            <p class="estado-cidade">— NEW AUSTIN —</p>
+                            <div class="linha"></div>
+                            <p>Antes de virar a cidade fantasma do primeiro jogo, Tumbleweed ainda está ativa em RDR2 no
+                                meio do
+                                deserto. A ordem local é mantida com mão de ferro pelo xerife Sam Freeman, que executa
+                                criminosos sem hesitar.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-
-            <div class="cidade">
-                <img src="../img/Valentine.jpg" alt="Valentine">
-                <div class="cidade-texto">
-                    <h3>Valentine</h3>
-                    <p class="estado-cidade">— NEW HANOVER —</p>
-                    <div class="linha"></div>
-                    <p>Valentine é o retrato clássico do Velho Oeste, com ruas lamacentas, leilões de gado e movimento
-                        constante. É a primeira grande cidade que o jogador explora, sendo famosa por suas brigas de bar
-                        e pela presença constante de caubóis e fora-da-lei. </p>
-                </div>
-            </div>
-
-            <div class="cidade">
-                <img src="../img/Rhodes.jpg" alt="Rhodes">
-                <div class="cidade-texto">
-                    <h3>Rhodes</h3>
-                    <p class="estado-cidade">— LEMOYNE —</p>
-                    <div class="linha"></div>
-                    <p>Marcada pela terra vermelha e pelo calor do sul, Rhodes carrega as cicatrizes da Guerra Civil
-                        Americana. A cidade parece tranquila, mas vive sob a tensão de uma rivalidade sangrenta entre
-                        duas famílias ricas da região: os Gray e os Braithwaite.
-                    </p>
-                </div>
-            </div>
-
-            <div class="cidade">
-                <img src="../img/Strawberry.jpg" alt="Strawberry">
-                <div class="cidade-texto">
-                    <h3>Strawberry</h3>
-                    <p class="estado-cidade">— WEST ELIZABETH —</p>
-                    <div class="linha"></div>
-                    <p>Escondida entre as montanhas, Strawberry é uma charmosa vila madeireira cortada por um riacho.
-                        Seu prefeito tenta transformá-la em um destino turístico de luxo, motivo pelo qual a cidade não
-                        possui nenhum saloon.
-                    </p>
-                </div>
-            </div>
-
-            <div class="cidade">
-                <img src="../img/Annesburg.jpg" alt="Annesburg ">
-                <div class="cidade-texto">
-                    <h3>Annesburg </h3>
-                    <p class="estado-cidade">— NEW HANOVER —</p>
-                    <div class="linha"></div>
-                    <p>Um retrato duro da revolução industrial na fronteira. Annesburg vive exclusivamente da mineração
-                        de carvão, com céu cinzento, água poluída e operários trabalhando em condições precárias sob o
-                        domínio de uma mineradora gananciosa.
-                    </p>
-                </div>
-            </div>
-
-            <div class="cidade">
-                <img src="../img/Blackwater.jpg" alt="Blackwater ">
-                <div class="cidade-texto">
-                    <h3>Blackwater</h3>
-                    <p class="estado-cidade">— WEST ELIZABETH —</p>
-                    <div class="linha"></div>
-                    <p>Uma cidade portuária em rápida modernização, misturando prédios de tijolos com o estilo rústico
-                        do oeste. É o palco do famoso assalto que deu errado antes do jogo começar, ficando inacessível
-                        para Arthur Morgan durante a campanha principal.
-                    </p>
-                </div>
-            </div>
-
-            <div class="cidade">
-                <img src="../img/Armadillo.jpg" alt="Armadillo">
-                <div class="cidade-texto">
-                    <h3>Armadillo</h3>
-                    <p class="estado-cidade">— NEW AUSTIN —</p>
-                    <div class="linha"></div>
-                    <p>Cenário clássico do primeiro jogo, Armadillo aparece em RDR2 devastada por um surto brutal de
-                        cólera. Com covas abertas e poucos moradores sobreviventes, a cidade desértica tem um clima
-                        desolado e melancólico.
-                    </p>
-                </div>
-            </div>
-
-            <div class="cidade">
-                <img src="../img/Tumbleweed.jpg" alt="Tumbleweed">
-                <div class="cidade-texto">
-                    <h3>Tumbleweed</h3>
-                    <p class="estado-cidade">— NEW AUSTIN —</p>
-                    <div class="linha"></div>
-                    <p>Antes de virar a cidade fantasma do primeiro jogo, Tumbleweed ainda está ativa em RDR2 no meio do
-                        deserto. A ordem local é mantida com mão de ferro pelo xerife Sam Freeman, que executa
-                        criminosos sem hesitar.
-                    </p>
-                </div>
-            </div>
-
+            <div class="swiper-button-prev seta-cidades-prev"></div>
+            <div class="swiper-button-next seta-cidades-next"></div>
         </div>
-
     </section>
+    <script src="../js/historia.js"></script>
 
     <section class="section-historia">
 
