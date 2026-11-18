@@ -295,13 +295,6 @@ body {
     background-color: red;
 }
 
-.lista-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 40px;
-}
-
 .card {
     background-color: #1a1616;
     border: 1px solid #333;
@@ -316,9 +309,7 @@ body {
 
 .card img {
     width: 100%;
-    height: 260px;
-    object-fit: cover;
-    object-position: top;
+    height: auto;
     display: block;
 }
 
@@ -348,6 +339,43 @@ body {
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
+}
+
+/* Carrossel */
+
+.carrossel {
+    position: relative;
+    margin: 40px 0 0;
+    padding: 0 60px 45px;          /* 45px embaixo: é onde ficam as bolinhas */
+
+    --swiper-theme-color: red;                       /* bolinha ativa */
+    --swiper-pagination-bullet-inactive-color: white;/* bolinhas inativas */
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+}
+
+.swiper-slide.card {
+    height: auto;
+}
+
+.carrossel .swiper-button-prev,
+.carrossel .swiper-button-next {
+    color: white;                  /* seta branca, bem visível no fundo escuro */
+}
+
+.carrossel .swiper-navigation-icon {
+    display: none;
+}
+
+.carrossel .swiper-button-prev::after,
+.carrossel .swiper-button-next::after {
+    content: '★';
+    font-size: 36px;
+    color: red;
+}
+
+.carrossel .swiper-button-prev:hover::after,
+.carrossel .swiper-button-next:hover::after {
+    color: #f0e0b8;
 }
 
 /* Mapa */

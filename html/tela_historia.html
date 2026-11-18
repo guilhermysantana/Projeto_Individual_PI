@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personagens</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rye&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
-    <script src="../js/historia.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -41,9 +41,18 @@
                 <h2>A Gangue Van der Linde</h2>
                 <div class="linha"></div>
 
-                <p>Após um assalto fracassado em Blackwater, Dutch van der Linde e seus seguidores fogem pelas montanhas, perseguidos por agentes federais e caçadores de recompensa. Pelos olhos de Arthur Morgan, acompanhamos a gangue roubar, lutar e sobreviver no coração da América — enquanto a lealdade se desfaz e a civilização avança sobre a fronteira.</p>
-                <p>Enquanto a Gangue Van der Linde tenta sobreviver ao avanço da civilização e à caçada implacável da lei, a jornada de Arthur Morgan é marcada por confrontos sangrentos com as facções mais perigosas da fronteira americana. </p>
-                <p>Primeiros passos da fuga, o grupo enfrenta a brutalidade dos O'Driscoll Boys, seus antigos e mortais inimigos liderados por Colm O'Driscoll; mais ao sul, nos pântanos de Lemoyne, precisa expulsar os extremistas confederados dos Saqueadores de Lemoyne para garantir abrigo; nas florestas sombrias do norte, lida com o terror selvagem e canibal do clã Murfree Brood; e, no desfecho trágico dessa era, encara a ganância e a traição definitiva da Gangue de Micah no topo nevado do Monte Hagen.</p>
+                <p>Após um assalto fracassado em Blackwater, Dutch van der Linde e seus seguidores fogem pelas
+                    montanhas, perseguidos por agentes federais e caçadores de recompensa. Pelos olhos de Arthur Morgan,
+                    acompanhamos a gangue roubar, lutar e sobreviver no coração da América — enquanto a lealdade se
+                    desfaz e a civilização avança sobre a fronteira.</p>
+                <p>Enquanto a Gangue Van der Linde tenta sobreviver ao avanço da civilização e à caçada implacável da
+                    lei, a jornada de Arthur Morgan é marcada por confrontos sangrentos com as facções mais perigosas da
+                    fronteira americana. </p>
+                <p>Primeiros passos da fuga, o grupo enfrenta a brutalidade dos O'Driscoll Boys, seus antigos e mortais
+                    inimigos liderados por Colm O'Driscoll; mais ao sul, nos pântanos de Lemoyne, precisa expulsar os
+                    extremistas confederados dos Saqueadores de Lemoyne para garantir abrigo; nas florestas sombrias do
+                    norte, lida com o terror selvagem e canibal do clã Murfree Brood; e, no desfecho trágico dessa era,
+                    encara a ganância e a traição definitiva da Gangue de Micah no topo nevado do Monte Hagen.</p>
             </div>
         </div>
 
@@ -51,118 +60,133 @@
             <p class="rotulo">PERSONAGENS</p>
             <div class="linha"></div>
 
-            <div class="lista-cards">
+            <div class="carrossel">
 
-                <div class="card">
-                    <img src="../img/Arthur Morgan.jpg" alt="Arthur Morgan">
-                    <div class="card-texto">
-                        <h3>Arthur Morgan</h3>
-                        <p class="funcao">PROTAGONISTA/BRAÇO DIREITO</p>
-                        <div class="linha"></div>
-                        <p>O principal executor da gangue Van der Linde. Criado por Dutch desde jovem, Arthur é um fora
-                            da lei implacável que começa a questionar sua própria lealdade e moralidade à medida que o
-                            cerco da lei se fecha. </p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Arthur Morgan.jpg" alt="Arthur Morgan">
+                            <div class="card-texto">
+                                <h3>Arthur Morgan</h3>
+                                <p class="funcao">PROTAGONISTA/BRAÇO DIREITO</p>
+                                <div class="linha"></div>
+                                <p>O principal executor da gangue Van der Linde. Criado por Dutch desde jovem, Arthur é
+                                    um fora da lei implacável que começa a questionar sua própria lealdade e moralidade
+                                    à medida que o cerco da lei se fecha. </p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Dutch van der Linde.jpg" alt="Dutch van der Linde">
+                            <div class="card-texto">
+                                <h3>Dutch van der Linde</h3>
+                                <p class="funcao">LÍDER/IDEIALISTA</p>
+                                <div class="linha"></div>
+                                <p>O fundador carismático da gangue. Ele prega a liberdade contra as regras da
+                                    civilização moderna, mas sua obsessão por um último grande golpe e a pressão
+                                    constante colocam sua sanidade e o grupo em risco. Seus planos ficam cada vez mais
+                                    desesperados.</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/John Marston.jpg" alt="John Marston">
+                            <div class="card-texto">
+                                <h3>John Marston</h3>
+                                <p class="funcao">FORA DA LEI EM CONFLITO</p>
+                                <div class="linha"></div>
+                                <p>Outro jovem criado por Dutch, mas que mantém uma relação conturbada com a gangue após
+                                    abandoná-la temporariamente. Ele precisa amadurecer à força para proteger sua
+                                    família e garantir um futuro longe do crime.</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Hosea Matthews.jpg" alt="Hosea Matthews">
+                            <div class="card-texto">
+                                <h3>Hosea Matthews</h3>
+                                <p class="funcao">COFUNDADOR/ESTRATEGISTA</p>
+                                <div class="linha"></div>
+                                <p>O parceiro mais antigo de Dutch e a voz da razão do grupo. Inteligente e diplomático,
+                                    Hosea prefere resolver problemas com lábia e golpes elaborados em vez de tiroteios
+                                    desnecessários.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Micah Bell.jpg" alt="Micah Bell">
+                            <div class="card-texto">
+                                <h3>Micah Bell</h3>
+                                <p class="funcao">PISTOLEIRO/CATALISADOR DE CONFLITOS</p>
+                                <div class="linha"></div>
+                                <p>Um fora da lei impulsivo, violento e imprevisível que entrou recentemente para a
+                                    gangue. Sua influência tóxica sobre Dutch gera constantes atritos internos,
+                                    especialmente com Arthur.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Sadie Adler.jpg" alt="Sadie Adler">
+                            <div class="card-texto">
+                                <h3>Sadie Adler</h3>
+                                <p class="funcao">VIÚVA/CAÇADORA DE RECOMPENSAS</p>
+                                <div class="linha"></div>
+                                <p>Resgatada pela gangue após ter sua vida destruída pelos O'Driscolls, ela deixa para
+                                    trás o papel de vítima para se tornar uma das combatentes mais ferozes, destemidas e
+                                    leais ao lado de Arthur.</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Charles Smith.jpg" alt="Charles Smith">
+                            <div class="card-texto">
+                                <h3>Charles Smith</h3>
+                                <p class="funcao">RASTREADOR/BATEDOR</p>
+                                <div class="linha"></div>
+                                <p>Um caçador habilidoso, calmo e reservado. Apesar de ser um membro relativamente novo,
+                                    destaca-se por sua forte bússola moral, tornando-se um dos aliados mais confiáveis
+                                    nos momentos de crise.</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Abigail Roberts.jpg" alt="Abigail Roberts">
+                            <div class="card-texto">
+                                <h3>Abigail Roberts</h3>
+                                <p class="funcao">MÃE/CONCIÊNCIA MORAL</p>
+                                <div class="linha"></div>
+                                <p>Uma mulher forte e pragmática que cresceu na gangue. Seu único objetivo é convencer
+                                    John a abandonar a vida de fora da lei para que possam criar seu filho em paz e
+                                    segurança.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <img src="../img/Jack Marston.jpg" alt="Jack Marston">
+                            <div class="card-texto">
+                                <h3>Jack Marston</h3>
+                                <p class="funcao">FILHO/FUTURO DA FAMÍLIA</p>
+                                <div class="linha"></div>
+                                <p>O filho pequeno de John e Abigail, criado na estrada cercado por fora da lei. Ele
+                                    representa a inocência no meio do caos e é a principal motivação para os sacrifícios
+                                    feitos pelos adultos ao seu redor.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                <div class="card">
-                    <img src="../img/Dutch van der Linde.jpg" alt="Dutch van der Linde">
-                    <div class="card-texto">
-                        <h3>Dutch van der Linde</h3>
-                        <p class="funcao">LÍDER/IDEIALISTA</p>
-                        <div class="linha"></div>
-                        <p>O fundador carismático da gangue. Ele prega a liberdade contra as regras da civilização
-                            moderna, mas sua obsessão por um último grande golpe e a pressão constante colocam sua
-                            sanidade e o grupo em risco. Seus planos ficam cada vez mais desesperados.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../img/John Marston.jpg" alt="John Marston">
-                    <div class="card-texto">
-                        <h3>John Marston</h3>
-                        <p class="funcao">FORA DA LEI EM CONFLITO</p>
-                        <div class="linha"></div>
-                        <p>Outro jovem criado por Dutch, mas que mantém uma relação conturbada com a gangue após
-                            abandoná-la temporariamente. Ele precisa amadurecer à força para proteger sua família e
-                            garantir um futuro longe do crime.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../img/Hosea Matthews.jpg" alt="Hosea Matthews">
-                    <div class="card-texto">
-                        <h3>Hosea Matthews</h3>
-                        <p class="funcao">COFUNDADOR/ESTRATEGISTA</p>
-                        <div class="linha"></div>
-                        <p>O parceiro mais antigo de Dutch e a voz da razão do grupo. Inteligente e diplomático, Hosea
-                            prefere resolver problemas com lábia e golpes elaborados em vez de tiroteios desnecessários.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../img/Micah Bell.jpg" alt="Micah Bell">
-                    <div class="card-texto">
-                        <h3>Micah Bell</h3>
-                        <p class="funcao">PISTOLEIRO/CATALISADOR DE CONFLITOS</p>
-                        <div class="linha"></div>
-                        <p>Um fora da lei impulsivo, violento e imprevisível que entrou recentemente para a gangue. Sua
-                            influência tóxica sobre Dutch gera constantes atritos internos, especialmente com Arthur.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../img/Sadie Adler.jpg" alt="Sadie Adler">
-                    <div class="card-texto">
-                        <h3>Sadie Adler</h3>
-                        <p class="funcao">VIÚVA/CAÇADORA DE RECOMPENSAS</p>
-                        <div class="linha"></div>
-                        <p>Resgatada pela gangue após ter sua vida destruída pelos O'Driscolls, ela deixa para trás o
-                            papel de vítima para se tornar uma das combatentes mais ferozes, destemidas e leais ao lado
-                            de Arthur.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../img/Charles Smith.jpg" alt="Charles Smith">
-                    <div class="card-texto">
-                        <h3>Charles Smith</h3>
-                        <p class="funcao">RASTREADOR/BATEDOR</p>
-                        <div class="linha"></div>
-                        <p>Um caçador habilidoso, calmo e reservado. Apesar de ser um membro relativamente novo,
-                            destaca-se por sua forte bússola moral, tornando-se um dos aliados mais confiáveis nos
-                            momentos de crise.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../img/Abigail Roberts.jpg" alt="Abigail Roberts">
-                    <div class="card-texto">
-                        <h3>Abigail Roberts</h3>
-                        <p class="funcao">MÃE/CONCIÊNCIA MORAL</p>
-                        <div class="linha"></div>
-                        <p>Uma mulher forte e pragmática que cresceu na gangue. Seu único objetivo é convencer John a
-                            abandonar a vida de fora da lei para que possam criar seu filho em paz e segurança.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../img/Jack Marston.jpg" alt="Jack Marston">
-                    <div class="card-texto">
-                        <h3>Jack Marston</h3>
-                        <p class="funcao">FILHO/FUTURO DA FAMÍLIA</p>
-                        <div class="linha"></div>
-                        <p>O filho pequeno de John e Abigail, criado na estrada cercado por fora da lei. Ele representa
-                            a inocência no meio do caos e é a principal motivação para os sacrifícios feitos pelos
-                            adultos ao seu redor.</p>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
             </div>
         </div>
     </section>
+    <script src="../js/personagens.js"></script>
 
     <section class="section-mapa">
 
