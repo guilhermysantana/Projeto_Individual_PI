@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rye&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+    <script src="../js/historia.js"></script>
 </head>
 
 <body>
@@ -39,10 +41,9 @@
                 <h2>A Gangue Van der Linde</h2>
                 <div class="linha"></div>
 
-                <p>Após um assalto fracassado em Blackwater, Dutch van der Linde e seus seguidores fogem pelas
-                    montanhas, perseguidos por agentes federais e caçadores de recompensa.</p>
-                <p>Pelos olhos de Arthur Morgan, acompanhamos a gangue roubar, lutar e sobreviver no coração da América
-                    — enquanto a lealdade se desfaz e a civilização avança sobre a fronteira.</p>
+                <p>Após um assalto fracassado em Blackwater, Dutch van der Linde e seus seguidores fogem pelas montanhas, perseguidos por agentes federais e caçadores de recompensa. Pelos olhos de Arthur Morgan, acompanhamos a gangue roubar, lutar e sobreviver no coração da América — enquanto a lealdade se desfaz e a civilização avança sobre a fronteira.</p>
+                <p>Enquanto a Gangue Van der Linde tenta sobreviver ao avanço da civilização e à caçada implacável da lei, a jornada de Arthur Morgan é marcada por confrontos sangrentos com as facções mais perigosas da fronteira americana. </p>
+                <p>Primeiros passos da fuga, o grupo enfrenta a brutalidade dos O'Driscoll Boys, seus antigos e mortais inimigos liderados por Colm O'Driscoll; mais ao sul, nos pântanos de Lemoyne, precisa expulsar os extremistas confederados dos Saqueadores de Lemoyne para garantir abrigo; nas florestas sombrias do norte, lida com o terror selvagem e canibal do clã Murfree Brood; e, no desfecho trágico dessa era, encara a ganância e a traição definitiva da Gangue de Micah no topo nevado do Monte Hagen.</p>
             </div>
         </div>
 
@@ -225,7 +226,9 @@
                     <h3>Saint Denis</h3>
                     <p class="estado-cidade">— LEMOYNE —</p>
                     <div class="linha"></div>
-                    <p>Inspirada em Nova Orleans, essa metrópole industrializada simboliza o fim da era dos fora-da-lei e a chegada da modernidade. Com bondes elétricos, mansões luxuosas e fábricas poluídas, a cidade tem uma força policial implacável e ruas sempre lotadas. </p>
+                    <p>Inspirada em Nova Orleans, essa metrópole industrializada simboliza o fim da era dos fora-da-lei
+                        e a chegada da modernidade. Com bondes elétricos, mansões luxuosas e fábricas poluídas, a cidade
+                        tem uma força policial implacável e ruas sempre lotadas. </p>
                 </div>
             </div>
 
@@ -235,7 +238,9 @@
                     <h3>Valentine</h3>
                     <p class="estado-cidade">— NEW HANOVER —</p>
                     <div class="linha"></div>
-                    <p>Valentine é o retrato clássico do Velho Oeste, com ruas lamacentas, leilões de gado e movimento constante. É a primeira grande cidade que o jogador explora, sendo famosa por suas brigas de bar e pela presença constante de caubóis e fora-da-lei. </p>
+                    <p>Valentine é o retrato clássico do Velho Oeste, com ruas lamacentas, leilões de gado e movimento
+                        constante. É a primeira grande cidade que o jogador explora, sendo famosa por suas brigas de bar
+                        e pela presença constante de caubóis e fora-da-lei. </p>
                 </div>
             </div>
 
@@ -245,7 +250,9 @@
                     <h3>Rhodes</h3>
                     <p class="estado-cidade">— LEMOYNE —</p>
                     <div class="linha"></div>
-                    <p>Marcada pela terra vermelha e pelo calor do sul, Rhodes carrega as cicatrizes da Guerra Civil Americana. A cidade parece tranquila, mas vive sob a tensão de uma rivalidade sangrenta entre duas famílias ricas da região: os Gray e os Braithwaite.
+                    <p>Marcada pela terra vermelha e pelo calor do sul, Rhodes carrega as cicatrizes da Guerra Civil
+                        Americana. A cidade parece tranquila, mas vive sob a tensão de uma rivalidade sangrenta entre
+                        duas famílias ricas da região: os Gray e os Braithwaite.
                     </p>
                 </div>
             </div>
@@ -256,7 +263,9 @@
                     <h3>Strawberry</h3>
                     <p class="estado-cidade">— WEST ELIZABETH —</p>
                     <div class="linha"></div>
-                    <p>Escondida entre as montanhas, Strawberry é uma charmosa vila madeireira cortada por um riacho. Seu prefeito tenta transformá-la em um destino turístico de luxo, motivo pelo qual a cidade não possui nenhum saloon. 
+                    <p>Escondida entre as montanhas, Strawberry é uma charmosa vila madeireira cortada por um riacho.
+                        Seu prefeito tenta transformá-la em um destino turístico de luxo, motivo pelo qual a cidade não
+                        possui nenhum saloon.
                     </p>
                 </div>
             </div>
@@ -267,7 +276,9 @@
                     <h3>Annesburg </h3>
                     <p class="estado-cidade">— NEW HANOVER —</p>
                     <div class="linha"></div>
-                    <p>Um retrato duro da revolução industrial na fronteira. Annesburg vive exclusivamente da mineração de carvão, com céu cinzento, água poluída e operários trabalhando em condições precárias sob o domínio de uma mineradora gananciosa.
+                    <p>Um retrato duro da revolução industrial na fronteira. Annesburg vive exclusivamente da mineração
+                        de carvão, com céu cinzento, água poluída e operários trabalhando em condições precárias sob o
+                        domínio de uma mineradora gananciosa.
                     </p>
                 </div>
             </div>
@@ -278,7 +289,9 @@
                     <h3>Blackwater</h3>
                     <p class="estado-cidade">— WEST ELIZABETH —</p>
                     <div class="linha"></div>
-                    <p>Uma cidade portuária em rápida modernização, misturando prédios de tijolos com o estilo rústico do oeste. É o palco do famoso assalto que deu errado antes do jogo começar, ficando inacessível para Arthur Morgan durante a campanha principal. 
+                    <p>Uma cidade portuária em rápida modernização, misturando prédios de tijolos com o estilo rústico
+                        do oeste. É o palco do famoso assalto que deu errado antes do jogo começar, ficando inacessível
+                        para Arthur Morgan durante a campanha principal.
                     </p>
                 </div>
             </div>
@@ -289,7 +302,9 @@
                     <h3>Armadillo</h3>
                     <p class="estado-cidade">— NEW AUSTIN —</p>
                     <div class="linha"></div>
-                    <p>Cenário clássico do primeiro jogo, Armadillo aparece em RDR2 devastada por um surto brutal de cólera. Com covas abertas e poucos moradores sobreviventes, a cidade desértica tem um clima desolado e melancólico.
+                    <p>Cenário clássico do primeiro jogo, Armadillo aparece em RDR2 devastada por um surto brutal de
+                        cólera. Com covas abertas e poucos moradores sobreviventes, a cidade desértica tem um clima
+                        desolado e melancólico.
                     </p>
                 </div>
             </div>
@@ -300,8 +315,131 @@
                     <h3>Tumbleweed</h3>
                     <p class="estado-cidade">— NEW AUSTIN —</p>
                     <div class="linha"></div>
-                    <p>Antes de virar a cidade fantasma do primeiro jogo, Tumbleweed ainda está ativa em RDR2 no meio do deserto. A ordem local é mantida com mão de ferro pelo xerife Sam Freeman, que executa criminosos sem hesitar.
+                    <p>Antes de virar a cidade fantasma do primeiro jogo, Tumbleweed ainda está ativa em RDR2 no meio do
+                        deserto. A ordem local é mantida com mão de ferro pelo xerife Sam Freeman, que executa
+                        criminosos sem hesitar.
                     </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-historia">
+
+        <p class="rotulo">A HISTÓRIA</p>
+        <h2>A saga em sete atos</h2>
+        <div class="linha"></div>
+
+        <p class="intro">Da nevasca de Colter à fazenda de Beecher's Hope, a gangue van der Linde atravessa cinco
+            estados em pouco mais de um ano — e cada acampamento guarda uma promessa que nunca se cumpre.</p>
+
+        <div class="lista-capitulos">
+
+            <div class="capitulo">
+                <div class="circulo">I</div>
+                <div class="capitulo-texto">
+                    <h3>Colter<span class="cap-numero">CAPÍTULO I</span></h3>
+                    <p class="local">AMBARINO · INVERNO DE 1899</p>
+                    <p class="resumo">Após um roubo fracassado na cidade de Blackwater, a gangue Van der Linde foge para
+                        as montanhas nevadas de Ambarino. Famintos, congelando e cercados por uma nevasca implacável,
+                        eles se abrigam na cidade fantasma de Colter. Neste ato inicial, Arthur Morgan e o líder Dutch
+                        van der Linde precisam reunir os sobreviventes, caçar para alimentar o grupo e enfrentar uma
+                        gangue rival, os O'Driscolls, antes que o inverno acabe com todos.</p>
+                </div>
+            </div>
+
+            <div class="capitulo">
+                <div class="circulo">II</div>
+                <div class="capitulo-texto">
+                    <h3>Mirante Horseshoe<span class="cap-numero">CAPÍTULO II</span></h3>
+                    <p class="local">HEARTLANDS · NEW HANOVER</p>
+                    <p class="resumo">Com a chegada da primavera e o fim das nevascas, a gangue desce das montanhas e
+                        monta acampamento próximo à cidade pecuária de Valentine, em New Hanover. O clima no acampamento
+                        é de esperança e otimismo. Enquanto tentam juntar dinheiro suficiente para desaparecer do mapa,
+                        os fora da lei realizam pequenos golpes, resgatam companheiros capturados e acabam chamando a
+                        atenção indesejada da poderosa família Cornwall e dos agentes da agência Pinkerton.</p>
+                </div>
+            </div>
+
+            <div class="capitulo">
+                <div class="circulo">III</div>
+                <div class="capitulo-texto">
+                    <h3>Península Clemens<span class="cap-numero">CAPÍTULO III</span></h3>
+                    <p class="local">SAINT DENIS · LEMOYNE</p>
+                    <p class="resumo">Forçados a fugir novamente de New Hanover, o grupo segue para o sul e se
+                        estabelece às margens do lago Flat Iron, perto de Rhodes, no estado de Lemoyne. Tentando manter
+                        a discrição, Dutch decide envolver a gangue em uma antiga rivalidade entre duas famílias
+                        aristocratas locais, os Gray e os Braithwaite, acreditando que pode manipular ambos os lados
+                        para roubar o ouro deles. No entanto, o plano sai do controle e traz consequências trágicas para
+                        o grupo.</p>
+                </div>
+            </div>
+
+            <div class="capitulo">
+                <div class="circulo">IV</div>
+                <div class="capitulo-texto">
+                    <h3>Saint Denis<span class="cap-numero">CAPÍTULO IV</span></h3>
+                    <p class="local">SAINT DENIS · LEMOYNE</p>
+                    <p class="resumo">Buscando uma grande fortuna que garanta a fuga definitiva do país, a gangue avança
+                        para Saint Denis, uma metrópole industrial movimentada que representa tudo o que os fora da lei
+                        desprezam. Instalados na antiga mansão Shady Belle, nos pântanos próximos à cidade, Arthur e
+                        Dutch tentam aplicar grandes golpes na alta sociedade e no submundo do crime local. A pressão
+                        das autoridades chega ao limite, culminando em um assalto a banco que muda o rumo da história.
+                    </p>
+                </div>
+            </div>
+
+            <div class="capitulo">
+                <div class="circulo">V</div>
+                <div class="capitulo-texto">
+                    <h3>Guarma<span class="cap-numero">CAPÍTULO V</span></h3>
+                    <p class="local">GUARMA - UMA ILHA FORA DO MAPA</p>
+                    <p class="resumo">Após uma fuga desesperada pelo mar que termina em um naufrágio, parte da gangue
+                        vai parar em Guarma, uma ilha tropical isolada próxima a Cuba. Sem armas, sem suprimentos e
+                        longe de casa, os sobreviventes acabam se envolvendo em uma violenta revolução local contra um
+                        ditador tirânico e seus aliados militares. O grupo precisa lutar para libertar os trabalhadores
+                        locais e conseguir um navio para retornar aos Estados Unidos.</p>
+                </div>
+            </div>
+
+            <div class="capitulo">
+                <div class="circulo">VI</div>
+                <div class="capitulo-texto">
+                    <h3>Gruta dos Castores<span class="cap-numero">CAPÍTULO VI</span></h3>
+                    <p class="local">WEST ELIZABETH</p>
+                    <p class="resumo">De volta ao continente, os integrantes restantes se refugiam em uma caverna
+                        sombria na região de Roanoke Ridge. O acampamento está dividido, a desconfiança reina entre os
+                        membros e as decisões de Dutch tornam-se cada vez mais erráticas e perigosas. Enfrentando uma
+                        grave crise pessoal, Arthur Morgan precisa decidir onde está sua verdadeira lealdade e lutar
+                        para salvar aqueles que ainda importam antes que a gangue desmorone por completo.</p>
+                </div>
+            </div>
+
+            <div class="capitulo">
+                <div class="circulo">VII</div>
+                <div class="capitulo-texto">
+                    <h3>Rancho Pronghorn<span class="cap-numero">EPÍLOGO I</span></h3>
+                    <p class="local">NEW HANOVER · 1907</p>
+                    <p class="resumo">A narrativa avança alguns anos no tempo e muda o foco para John Marston, que tenta
+                        deixar a vida de fora da lei para trás ao lado de sua família. Buscando um recomeço honesto,
+                        John consegue um emprego como peão no Rancho Pronghorn, em West Elizabeth. No entanto, ele logo
+                        percebe que fugir do próprio passado é mais difícil do que parece quando problemas locais exigem
+                        que ele volte a empunhar suas armas.</p>
+                </div>
+            </div>
+
+            <div class="capitulo">
+                <div class="circulo">VIII</div>
+                <div class="capitulo-texto">
+                    <h3>RANCHO PRONGHORN<span class="cap-numero">EPÍLOGO II</span></h3>
+                    <p class="local">NEW HANOVER · 1907</p>
+                    <p class="resumo">Determinado a construir um futuro estável e digno para sua família, John compra um
+                        terreno nas Grandes Planícies e inicia a construção de sua própria fazenda, batizada de
+                        Beecher's Hope. Com a ajuda de velhos amigos, ele ergue sua casa e tenta se estabelecer como um
+                        cidadão comum, mas uma última pendência ligada aos eventos de 1899 ainda precisa ser resolvida
+                        para encerrar de vez a história da gangue Van der Linde.</p>
                 </div>
             </div>
 

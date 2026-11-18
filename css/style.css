@@ -237,7 +237,7 @@ body {
 /* Tela de personagens */
 
 .section-personagens {
-    background-color: #111;
+    background-color: #1a1616;
     color: white;
     padding: 120px;
 }
@@ -353,7 +353,7 @@ body {
 /* Mapa */
 
 .section-mapa {
-    background-color: #1a1616;
+    background-color: #111;
     color: white;
     padding: 80px 7vw;
 }
@@ -406,7 +406,7 @@ body {
 /* Cidades */
 
 .section-cidades {
-    background-color: #111;
+    background-color: #1a1616;
     color: white;
     padding: 80px 7vw;
 }
@@ -480,6 +480,81 @@ body {
     color: #b8a98f;
     font-size: 13px;
     line-height: 1.6;
+    margin: 0;
+}
+
+/* A história */
+
+.section-historia {
+    background-color: #111;
+    color: white;
+    padding: 80px 7vw;
+}
+
+.section-historia h2 {
+    font-family: 'Rye', sans-serif;
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.lista-capitulos {
+    margin-top: 40px;
+}
+
+.capitulo {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    border-left: 2px solid red;
+    padding: 0 0 0 20px;
+    margin-bottom: 25px;
+}
+
+.circulo {
+    width: 46px;
+    height: 46px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background-color: #f5e6c8;
+    color: #1a1616;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.capitulo-texto {
+    font-family: Arial, sans-serif;
+}
+
+.capitulo-texto h3 {
+    font-family: 'Rye', sans-serif;
+    font-size: 20px;
+    color: #f0e0b8;
+    margin: 0 0 5px;
+}
+
+.cap-numero {
+    color: red;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-left: 8px;
+}
+
+.capitulo-texto .local {
+    color: #b8a98f;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+}
+
+.capitulo-texto .resumo {
+    color: #b8a98f;
+    font-size: 14px;
+    line-height: 1.5;
     margin: 0;
 }
 
