@@ -2,21 +2,60 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 800px) {
-    .header {
-        font-size: 12px;
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Rye', serif;
     background-color: black;
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Elementos comuns */
+
+.rotulo {
+    color: red;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.linha {
+    width: 60px;
+    height: 2px;
+    background-color: red;
+}
+
+.section-sobre,
+.section-mapa,
+.section-historia {
+    background-color: #111;
+    padding: 80px 7vw;
+}
+
+.section-sobre h2,
+.section-mapa h2,
+.section-historia h2,
+.section-cidades h2,
+.section-reflexao h2 {
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.section-sobre h2,
+.section-mapa h2,
+.section-historia h2 {
+    font-family: 'Rye', sans-serif;
+}
+
+.section-cidades h2,
+.section-reflexao h2 {
+    font-family: Georgia, serif;
 }
 
 /* Nav */
+
 .header {
     position: fixed;
     top: 0;
@@ -31,7 +70,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #262629;
-    color: white;
     padding: 10px;
 }
 
@@ -76,6 +114,12 @@ body {
     color: rgba(255, 0, 0, 0.468);
 }
 
+@media (max-width: 800px) {
+    .header {
+        font-size: 12px;
+    }
+}
+
 /* Footer */
 
 .footer {
@@ -83,6 +127,7 @@ body {
     border-top: 2px solid red;
     padding: 15px 7vw;
     text-align: center;
+    margin-top: auto;
 }
 
 .footer p {
@@ -113,7 +158,6 @@ body {
     padding: 120px 7vw 80px;
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .hero h2 {
@@ -141,18 +185,6 @@ body {
 }
 
 /* Sobre a obra */
-
-.section-sobre {
-    background-color: #111;
-    color: white;
-    padding: 80px 7vw;
-}
-
-.section-sobre h2 {
-    font-family: 'Rye', sans-serif;
-    font-size: 36px;
-    margin: 0 0 15px;
-}
 
 .sobre {
     display: flex;
@@ -202,7 +234,6 @@ body {
 }
 
 .ficha-valor {
-    color: white;
     font-size: 14px;
     text-align: right;
 }
@@ -258,12 +289,10 @@ body {
     margin: 0;
 }
 
-
 /* Tela de personagens */
 
 .section-personagens {
     background-color: #1a1616;
-    color: white;
     padding: 120px;
 }
 
@@ -286,27 +315,13 @@ body {
     line-height: 1.6;
 }
 
-.personagens .rotulo {
-    font-size: 20px;
-}
-
-.rotulo {
-    color: red;
-    font-size: 12px;
-    letter-spacing: 3px;
-}
-
 .gangue-texto h2 {
     font-family: 'Rye', sans-serif;
     color: white;
 }
 
-.gangue-texto .linha {
-    margin-bottom: 20px;
-}
-
 .gangue-texto p {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .gangue-texto .rotulo {
@@ -314,13 +329,18 @@ body {
     margin-bottom: 8px;
 }
 
-.linha {
-    width: 60px;
-    height: 2px;
-    background-color: red;
+.gangue-texto .linha {
+    margin-bottom: 20px;
 }
 
-.card {
+.personagens .rotulo {
+    font-size: 20px;
+}
+
+/* Cards (personagens e cidades) */
+
+.card,
+.cidade {
     background-color: #1a1616;
     border: 1px solid #333;
     border-radius: 4px;
@@ -328,7 +348,8 @@ body {
     transition: border-color 0.3s;
 }
 
-.card:hover {
+.card:hover,
+.cidade:hover {
     border-color: red;
 }
 
@@ -392,11 +413,6 @@ body {
     height: auto;
 }
 
-.carrossel .swiper-button-prev,
-.carrossel .swiper-button-next {
-    color: white;
-}
-
 .carrossel .swiper-navigation-icon {
     display: none;
 }
@@ -414,18 +430,6 @@ body {
 }
 
 /* Mapa */
-
-.section-mapa {
-    background-color: #111;
-    color: white;
-    padding: 80px 7vw;
-}
-
-.section-mapa h2 {
-    font-family: 'Rye', sans-serif;
-    font-size: 36px;
-    margin: 0 0 15px;
-}
 
 .mapa {
     display: flex;
@@ -470,14 +474,7 @@ body {
 
 .section-cidades {
     background-color: #1a1616;
-    color: white;
     padding: 80px 7vw;
-}
-
-.section-cidades h2 {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    margin: 0 0 15px;
 }
 
 .intro {
@@ -486,18 +483,6 @@ body {
     line-height: 1.6;
     max-width: 700px;
     margin: 25px 0 0;
-}
-
-.cidade {
-    background-color: #1a1616;
-    border: 1px solid #333;
-    border-radius: 4px;
-    overflow: hidden;
-    transition: border-color 0.3s;
-}
-
-.cidade:hover {
-    border-color: red;
 }
 
 .cidade img {
@@ -539,18 +524,6 @@ body {
 }
 
 /* A história */
-
-.section-historia {
-    background-color: #111;
-    color: white;
-    padding: 80px 7vw;
-}
-
-.section-historia h2 {
-    font-family: 'Rye', sans-serif;
-    font-size: 36px;
-    margin: 0 0 15px;
-}
 
 .lista-capitulos {
     margin-top: 40px;
@@ -617,15 +590,8 @@ body {
 
 .section-reflexao {
     background-color: #1a1616;
-    color: white;
     padding: 120px 7vw 80px;
     text-align: center;
-}
-
-.section-reflexao h2 {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    margin: 0 0 15px;
 }
 
 .section-reflexao .linha {
@@ -667,21 +633,16 @@ body {
     display: block;
 }
 
+/* Login e cadastro (partes iguais) */
 
-/* Tela de Login */
-
-.login {
-    width: 300px;
-    margin: 100px auto;
-}
-
-.login h1 {
+.login h1,
+.cadastro h1 {
     font-size: 24px;
     margin: 10px 0 30px;
-    color: white;
 }
 
-.subtitulo {
+.subtitulo,
+.subtitulo-cadastro {
     color: red;
     font-size: 12px;
 }
@@ -691,14 +652,15 @@ body {
     padding: 20px;
 }
 
-.login label {
+.caixa label {
     display: block;
     font-size: 9px;
     font-weight: bold;
     margin-bottom: 6px;
-    color: white;
-    height: 15px;
+}
 
+.caixa p {
+    font-size: 10px;
 }
 
 .caixa span {
@@ -709,19 +671,12 @@ body {
     margin-top: 8px;
 }
 
-.login .caixa p {
-    font-size: 10px;
-}
-
-
 input {
     width: 100%;
-    box-sizing: border-box;
     padding: 8px;
     background-color: black;
     color: white;
     border: 1px solid #444;
-
 }
 
 button {
@@ -733,7 +688,7 @@ button {
     font-weight: bold;
     border: none;
     cursor: pointer;
-    margin-top: 8px
+    margin-top: 8px;
 }
 
 button:hover {
@@ -741,78 +696,42 @@ button:hover {
     color: black;
 }
 
-.link {
+.link-cadastro,
+.link-entrar {
     text-align: center;
-    font-size: 12px;
     margin-top: 20px;
 }
 
-.link a {
+.link-cadastro a,
+.link-entrar a {
     color: white;
     text-decoration: none;
 }
 
-.link-cadastro {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-.criar-conta {
-    color: white;
-    text-decoration: none;
-}
-
-.criar-conta:hover {
+.link-cadastro a:hover,
+.link-entrar a:hover {
     color: red;
 }
 
-/* Tela de cadastro*/
+/* Tela de Login */
+
+.login {
+    width: 300px;
+    margin: 100px auto;
+}
+
+.login label {
+    height: 15px;
+}
+
+/* Tela de cadastro */
 
 .cadastro {
     width: 300px;
     margin: 60px auto;
 }
 
-.cadastro h1 {
-    font-size: 24px;
-    margin: 10px 0 30px;
-    color: white;
-}
-
-.cadastro .caixa p {
-    font-size: 10px;
-}
-
-.subtitulo-cadastro {
-    color: red;
-    font-size: 12px;
-}
-
 .regra_senha {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-}
-
-.link-entrar {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-.entrar {
-    color: white;
-    text-decoration: none;
-}
-
-.entrar:hover {
-    color: red;
-}
-
-.cadastro label {
-    display: block;
-    font-size: 9px;
-    font-weight: bold;
-    margin-bottom: 6px;
-    color: white;
 }
