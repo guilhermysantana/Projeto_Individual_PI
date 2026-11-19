@@ -588,6 +588,61 @@ body {
     margin: 0;
 }
 
+/* Tela de Reflexão */
+
+.section-reflexao {
+    background-color: #1a1616;
+    color: white;
+    padding: 120px 7vw 80px;
+    text-align: center;
+}
+
+.section-reflexao h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.section-reflexao .linha {
+    margin: 0 auto;
+}
+
+.reflexao-bloco {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.reflexao-bloco.inverso {
+    flex-direction: row-reverse;
+}
+
+.reflexao-texto {
+    width: 50%;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f5e6c8;
+}
+
+.reflexao-texto p {
+    margin: 0 0 20px;
+}
+
+.destaque {
+    color: red;
+    font-weight: bold;
+}
+
+.reflexao-bloco img {
+    width: 50%;
+    border-radius: 4px;
+    border: 1px solid #333;
+    display: block;
+}
+
+
 /* Tela de Login */
 
 .login {
