@@ -45,11 +45,11 @@ body {
 
 .section-sobre h2,
 .section-mapa h2,
-.section-historia h2 {
+.section-historia h2,
+.section-cidades h2 {
     font-family: 'Rye', sans-serif;
 }
 
-.section-cidades h2,
 .section-reflexao h2 {
     font-family: Georgia, serif;
 }
@@ -293,7 +293,7 @@ body {
 
 .section-personagens {
     background-color: #1a1616;
-    padding: 120px;
+    padding: 120px 7vw 80px;
 }
 
 .gangue {
@@ -387,45 +387,36 @@ body {
     margin: 0;
 }
 
-/* Carrossel */
+/* Carrossel dos personagens e das cidades */
 
-.carrossel {
-    position: relative;
-    margin: 40px 0 0;
-    padding: 0 60px;
-
-    --swiper-theme-color: red;
-    --swiper-pagination-bullet-inactive-color: white;
-    --swiper-pagination-bullet-inactive-opacity: 0.5;
+.carrossel-personagens,
+.carrossel-cidades {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.carrossel .swiper {
-    padding-bottom: 50px;
+.carrossel-personagens .card,
+.carrossel-cidades .cidade {
+    flex: 1;
 }
 
-.carrossel .swiper-pagination {
-    position: absolute;
-    bottom: 10px;
-}
-
-.swiper-slide.card,
-.swiper-slide.cidade {
-    height: auto;
-}
-
-.carrossel .swiper-navigation-icon {
-    display: none;
-}
-
-.carrossel .swiper-button-prev::after,
-.carrossel .swiper-button-next::after {
-    content: '★';
+.carrossel-personagens .seta,
+.carrossel-cidades .seta {
+    align-self: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
     font-size: 36px;
     color: red;
 }
 
-.carrossel .swiper-button-prev:hover::after,
-.carrossel .swiper-button-next:hover::after {
+.carrossel-personagens .seta:hover,
+.carrossel-cidades .seta:hover {
+    background: none;
     color: #f0e0b8;
 }
 
@@ -499,7 +490,7 @@ body {
 }
 
 .cidade-texto h3 {
-    font-family: Georgia, serif;
+    font-family: 'Rye', sans-serif;
     font-size: 22px;
     color: #f0e0b8;
     margin: 0 0 8px;

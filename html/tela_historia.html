@@ -12,8 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rye&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -60,127 +58,44 @@
             <p class="rotulo">PERSONAGENS</p>
             <div class="linha"></div>
 
-            <div class="carrossel">
+            <div class="carrossel-personagens">
+                <button class="seta" onclick="anterior()">★</button>
 
-                <div class="swiper swiper-personagens">
-                    <div class="swiper-wrapper">
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Arthur Morgan.jpg" alt="Arthur Morgan">
-                            <div class="card-texto">
-                                <h3>Arthur Morgan</h3>
-                                <p class="funcao">PROTAGONISTA/BRAÇO DIREITO</p>
-                                <div class="linha"></div>
-                                <p>O principal executor da gangue Van der Linde. Criado por Dutch desde jovem, Arthur é
-                                    um fora da lei implacável que começa a questionar sua própria lealdade e moralidade
-                                    à medida que o cerco da lei se fecha. </p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Dutch van der Linde.jpg" alt="Dutch van der Linde">
-                            <div class="card-texto">
-                                <h3>Dutch van der Linde</h3>
-                                <p class="funcao">LÍDER/IDEIALISTA</p>
-                                <div class="linha"></div>
-                                <p>O fundador carismático da gangue. Ele prega a liberdade contra as regras da
-                                    civilização moderna, mas sua obsessão por um último grande golpe e a pressão
-                                    constante colocam sua sanidade e o grupo em risco. Seus planos ficam cada vez mais
-                                    desesperados.</p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/John Marston.jpg" alt="John Marston">
-                            <div class="card-texto">
-                                <h3>John Marston</h3>
-                                <p class="funcao">FORA DA LEI EM CONFLITO</p>
-                                <div class="linha"></div>
-                                <p>Outro jovem criado por Dutch, mas que mantém uma relação conturbada com a gangue após
-                                    abandoná-la temporariamente. Ele precisa amadurecer à força para proteger sua
-                                    família e garantir um futuro longe do crime.</p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Hosea Matthews.jpg" alt="Hosea Matthews">
-                            <div class="card-texto">
-                                <h3>Hosea Matthews</h3>
-                                <p class="funcao">COFUNDADOR/ESTRATEGISTA</p>
-                                <div class="linha"></div>
-                                <p>O parceiro mais antigo de Dutch e a voz da razão do grupo. Inteligente e diplomático,
-                                    Hosea prefere resolver problemas com lábia e golpes elaborados em vez de tiroteios
-                                    desnecessários.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Micah Bell.jpg" alt="Micah Bell">
-                            <div class="card-texto">
-                                <h3>Micah Bell</h3>
-                                <p class="funcao">PISTOLEIRO/CATALISADOR DE CONFLITOS</p>
-                                <div class="linha"></div>
-                                <p>Um fora da lei impulsivo, violento e imprevisível que entrou recentemente para a
-                                    gangue. Sua influência tóxica sobre Dutch gera constantes atritos internos,
-                                    especialmente com Arthur.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Sadie Adler.jpg" alt="Sadie Adler">
-                            <div class="card-texto">
-                                <h3>Sadie Adler</h3>
-                                <p class="funcao">VIÚVA/CAÇADORA DE RECOMPENSAS</p>
-                                <div class="linha"></div>
-                                <p>Resgatada pela gangue após ter sua vida destruída pelos O'Driscolls, ela deixa para
-                                    trás o papel de vítima para se tornar uma das combatentes mais ferozes, destemidas e
-                                    leais ao lado de Arthur.</p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Charles Smith.jpg" alt="Charles Smith">
-                            <div class="card-texto">
-                                <h3>Charles Smith</h3>
-                                <p class="funcao">RASTREADOR/BATEDOR</p>
-                                <div class="linha"></div>
-                                <p>Um caçador habilidoso, calmo e reservado. Apesar de ser um membro relativamente novo,
-                                    destaca-se por sua forte bússola moral, tornando-se um dos aliados mais confiáveis
-                                    nos momentos de crise.</p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Abigail Roberts.jpg" alt="Abigail Roberts">
-                            <div class="card-texto">
-                                <h3>Abigail Roberts</h3>
-                                <p class="funcao">MÃE/CONCIÊNCIA MORAL</p>
-                                <div class="linha"></div>
-                                <p>Uma mulher forte e pragmática que cresceu na gangue. Seu único objetivo é convencer
-                                    John a abandonar a vida de fora da lei para que possam criar seu filho em paz e
-                                    segurança.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <img src="../img/Jack Marston.jpg" alt="Jack Marston">
-                            <div class="card-texto">
-                                <h3>Jack Marston</h3>
-                                <p class="funcao">FILHO/FUTURO DA FAMÍLIA</p>
-                                <div class="linha"></div>
-                                <p>O filho pequeno de John e Abigail, criado na estrada cercado por fora da lei. Ele
-                                    representa a inocência no meio do caos e é a principal motivação para os sacrifícios
-                                    feitos pelos adultos ao seu redor.</p>
-                            </div>
-                        </div>
+                <div class="card">
+                    <img id="imgPersonagem1" src="" alt="">
+                    <div class="card-texto">
+                        <h3 id="nomePersonagem1"></h3>
+                        <p class="funcao" id="funcaoPersonagem1"></p>
+                        <div class="linha"></div>
+                        <p id="textoPersonagem1"></p>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-prev seta-personagens-prev"></div>
-                <div class="swiper-button-next seta-personagens-next"></div>
+
+                <div class="card">
+                    <img id="imgPersonagem2" src="" alt="">
+                    <div class="card-texto">
+                        <h3 id="nomePersonagem2"></h3>
+                        <p class="funcao" id="funcaoPersonagem2"></p>
+                        <div class="linha"></div>
+                        <p id="textoPersonagem2"></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img id="imgPersonagem3" src="" alt="">
+                    <div class="card-texto">
+                        <h3 id="nomePersonagem3"></h3>
+                        <p class="funcao" id="funcaoPersonagem3"></p>
+                        <div class="linha"></div>
+                        <p id="textoPersonagem3"></p>
+                    </div>
+                </div>
+
+                <button class="seta" onclick="proximo()">★</button>
+            </div>
+
+            <div class="contador">
+                <p id="contador"></p>
             </div>
         </div>
     </section>
@@ -231,7 +146,6 @@
     </section>
 
     <section class="section-cidades">
-
         <p class="rotulo">AS CIDADES</p>
         <h2>Oito cidades da fronteira</h2>
         <div class="linha"></div>
@@ -239,132 +153,44 @@
         <p class="intro">Cada cidade do mapa tem sua própria lei, seu próprio sotaque e seu próprio jeito de mentir. Da
             lama de Valentine ao asfalto de Saint Denis, é ali que a gangue encontra trabalho — e problemas.</p>
 
-        <div class="carrossel">
+        <div class="carrossel-cidades">
+            <button class="seta" onclick="anteriorCidade()">★</button>
 
-            <div class="swiper swiper-cidades">
-                <div class="swiper-wrapper">
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/SaintDenis.jpg" alt="Saint Denis">
-                        <div class="cidade-texto">
-                            <h3>Saint Denis</h3>
-                            <p class="estado-cidade">— LEMOYNE —</p>
-                            <div class="linha"></div>
-                            <p>Inspirada em Nova Orleans, essa metrópole industrializada simboliza o fim da era dos
-                                fora-da-lei
-                                e a chegada da modernidade. Com bondes elétricos, mansões luxuosas e fábricas poluídas,
-                                a cidade
-                                tem uma força policial implacável e ruas sempre lotadas. </p>
-                        </div>
-                    </div>
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/Valentine.jpg" alt="Valentine">
-                        <div class="cidade-texto">
-                            <h3>Valentine</h3>
-                            <p class="estado-cidade">— NEW HANOVER —</p>
-                            <div class="linha"></div>
-                            <p>Valentine é o retrato clássico do Velho Oeste, com ruas lamacentas, leilões de gado e
-                                movimento
-                                constante. É a primeira grande cidade que o jogador explora, sendo famosa por suas
-                                brigas de bar
-                                e pela presença constante de caubóis e fora-da-lei. </p>
-                        </div>
-                    </div>
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/Rhodes.jpg" alt="Rhodes">
-                        <div class="cidade-texto">
-                            <h3>Rhodes</h3>
-                            <p class="estado-cidade">— LEMOYNE —</p>
-                            <div class="linha"></div>
-                            <p>Marcada pela terra vermelha e pelo calor do sul, Rhodes carrega as cicatrizes da Guerra
-                                Civil
-                                Americana. A cidade parece tranquila, mas vive sob a tensão de uma rivalidade sangrenta
-                                entre
-                                duas famílias ricas da região: os Gray e os Braithwaite.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/Strawberry.jpg" alt="Strawberry">
-                        <div class="cidade-texto">
-                            <h3>Strawberry</h3>
-                            <p class="estado-cidade">— WEST ELIZABETH —</p>
-                            <div class="linha"></div>
-                            <p>Escondida entre as montanhas, Strawberry é uma charmosa vila madeireira cortada por um
-                                riacho.
-                                Seu prefeito tenta transformá-la em um destino turístico de luxo, motivo pelo qual a
-                                cidade não
-                                possui nenhum saloon.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/Annesburg.jpg" alt="Annesburg ">
-                        <div class="cidade-texto">
-                            <h3>Annesburg </h3>
-                            <p class="estado-cidade">— NEW HANOVER —</p>
-                            <div class="linha"></div>
-                            <p>Um retrato duro da revolução industrial na fronteira. Annesburg vive exclusivamente da
-                                mineração
-                                de carvão, com céu cinzento, água poluída e operários trabalhando em condições precárias
-                                sob o
-                                domínio de uma mineradora gananciosa.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/Blackwater.jpg" alt="Blackwater ">
-                        <div class="cidade-texto">
-                            <h3>Blackwater</h3>
-                            <p class="estado-cidade">— WEST ELIZABETH —</p>
-                            <div class="linha"></div>
-                            <p>Uma cidade portuária em rápida modernização, misturando prédios de tijolos com o estilo
-                                rústico
-                                do oeste. É o palco do famoso assalto que deu errado antes do jogo começar, ficando
-                                inacessível
-                                para Arthur Morgan durante a campanha principal.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/Armadillo.jpg" alt="Armadillo">
-                        <div class="cidade-texto">
-                            <h3>Armadillo</h3>
-                            <p class="estado-cidade">— NEW AUSTIN —</p>
-                            <div class="linha"></div>
-                            <p>Cenário clássico do primeiro jogo, Armadillo aparece em RDR2 devastada por um surto
-                                brutal de
-                                cólera. Com covas abertas e poucos moradores sobreviventes, a cidade desértica tem um
-                                clima
-                                desolado e melancólico.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="cidade swiper-slide">
-                        <img src="../img/Tumbleweed.jpg" alt="Tumbleweed">
-                        <div class="cidade-texto">
-                            <h3>Tumbleweed</h3>
-                            <p class="estado-cidade">— NEW AUSTIN —</p>
-                            <div class="linha"></div>
-                            <p>Antes de virar a cidade fantasma do primeiro jogo, Tumbleweed ainda está ativa em RDR2 no
-                                meio do
-                                deserto. A ordem local é mantida com mão de ferro pelo xerife Sam Freeman, que executa
-                                criminosos sem hesitar.
-                            </p>
-                        </div>
-                    </div>
+            <div class="cidade">
+                <img id="imgCidade1" src="" alt="">
+                <div class="cidade-texto">
+                    <h3 id="nomeCidade1"></h3>
+                    <p class="estado-cidade" id="estadoCidade1"></p>
+                    <div class="linha"></div>
+                    <p id="textoCidade1"></p>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-prev seta-cidades-prev"></div>
-            <div class="swiper-button-next seta-cidades-next"></div>
+
+            <div class="cidade">
+                <img id="imgCidade2" src="" alt="">
+                <div class="cidade-texto">
+                    <h3 id="nomeCidade2"></h3>
+                    <p class="estado-cidade" id="estadoCidade2"></p>
+                    <div class="linha"></div>
+                    <p id="textoCidade2"></p>
+                </div>
+            </div>
+
+            <div class="cidade">
+                <img id="imgCidade3" src="" alt="">
+                <div class="cidade-texto">
+                    <h3 id="nomeCidade3"></h3>
+                    <p class="estado-cidade" id="estadoCidade3"></p>
+                    <div class="linha"></div>
+                    <p id="textoCidade3"></p>
+                </div>
+            </div>
+
+            <button class="seta" onclick="proximaCidade()">★</button>
+        </div>
+
+        <div class="contador">
+            <p id="contadorCidades"></p>
         </div>
     </section>
     <script src="../js/historia.js"></script>
