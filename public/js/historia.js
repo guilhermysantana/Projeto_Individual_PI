@@ -1,7 +1,7 @@
 // Carrossel dos personagens
 const nomes = ['Arthur Morgan', 'Dutch van der Linde', 'John Marston', 'Hosea Matthews', 'Micah Bell', 'Sadie Adler', 'Charles Smith', 'Abigail Roberts', 'Jack Marston']
 const funcoes = ['PROTAGONISTA/BRAÇO DIREITO', 'LÍDER/IDEALISTA', 'FORA DA LEI EM CONFLITO', 'COFUNDADOR/ESTRATEGISTA', 'PISTOLEIRO/CATALISADOR DE CONFLITOS', 'VIÚVA/CAÇADORA DE RECOMPENSAS', 'RASTREADOR/BATEDOR', 'MÃE/CONCIÊNCIA MORAL', 'FILHO/FUTURO DA FAMÍLIA']
-const imagens = ['../img/Arthur Morgan.jpg', '../img/Dutch van der Linde.jpg', '../img/John Marston.jpg', '../img/Hosea Matthews.jpg', '../img/Micah Bell.jpg', '../img/Sadie Adler.jpg', '../img/Charles Smith.jpg', '../img/Abigail Roberts.jpg', '../img/Jack Marston.jpg']
+const imagens = ['assets/Arthur Morgan.jpg', 'assets/Dutch van der Linde.jpg', 'assets/John Marston.jpg', 'assets/Hosea Matthews.jpg', 'assets/Micah Bell.jpg', 'assets/Sadie Adler.jpg', 'assets/Charles Smith.jpg', 'assets/Abigail Roberts.jpg', 'assets/Jack Marston.jpg']
 const textos = [
     'O principal executor da gangue Van der Linde. Criado por Dutch desde jovem, Arthur é um fora da lei implacável que começa a questionar sua própria lealdade e moralidade à medida que o cerco da lei se fecha.',
     'O fundador carismático da gangue. Ele prega a liberdade contra as regras da civilização moderna, mas sua obsessão por um último grande golpe e a pressão constante colocam sua sanidade e o grupo em risco.',
@@ -73,7 +73,7 @@ mostrar()
 // Carrossel das cidades
 const nomesCidades = ['Saint Denis', 'Valentine', 'Rhodes', 'Strawberry', 'Annesburg', 'Blackwater', 'Armadillo', 'Tumbleweed']
 const estadosCidades = ['— LEMOYNE —', '— NEW HANOVER —', '— LEMOYNE —', '— WEST ELIZABETH —', '— NEW HANOVER —', '— WEST ELIZABETH —', '— NEW AUSTIN —', '— NEW AUSTIN —']
-const imagensCidades = ['../img/SaintDenis.jpg', '../img/Valentine.jpg', '../img/Rhodes.jpg', '../img/Strawberry.jpg', '../img/Annesburg.jpg', '../img/Blackwater.jpg', '../img/Armadillo.jpg', '../img/Tumbleweed.jpg']
+const imagensCidades = ['assets/SaintDenis.jpg', 'assets/Valentine.jpg', 'assets/Rhodes.jpg', 'assets/Strawberry.jpg', 'assets/Annesburg.jpg', 'assets/Blackwater.jpg', 'assets/Armadillo.jpg', 'assets/Tumbleweed.jpg']
 const textosCidades = [
     'Inspirada em Nova Orleans, essa metrópole industrializada simboliza o fim da era dos fora-da-lei e a chegada da modernidade. Com bondes elétricos, mansões luxuosas e fábricas poluídas, a cidade tem uma força policial implacável e ruas sempre lotadas.',
     'Valentine é o retrato clássico do Velho Oeste, com ruas lamacentas, leilões de gado e movimento constante. É a primeira grande cidade que o jogador explora, sendo famosa por suas brigas de bar e pela presença constante de caubóis e fora-da-lei.',

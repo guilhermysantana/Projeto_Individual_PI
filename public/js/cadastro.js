@@ -50,8 +50,22 @@ function cadastrar() {
     }
 
     // Se tudo estiver certo
-    if (temTamanho && temNumero && temMinuscula && temMaiuscula && temEspecial) {
-        window.location.href = '../telas/inicio.html'
+        if (temTamanho && temNumero && temMinuscula && temMaiuscula && temEspecial) {
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                nomeServer: ipt_nome.value,
+                emailServer: ipt_email.value,
+                senhaServer: ipt_senha.value
+            })
+        }).then(function (resposta) {
+            if (resposta.ok) {
+                window.location.href = 'tela_login.html'
+            } else {
+                erro_confsenhaButton.innerHTML = '<p style="color: #eb352f;">*Não foi possível cadastrar. O e-mail pode já estar em uso.</p>'
+            }
+        })
     }
 }
 
