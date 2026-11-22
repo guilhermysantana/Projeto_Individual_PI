@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Honra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <div class="logo">
+                <a href="index.html">Red <span class="logo-red">Dead</span> Web</a>
+            </div>
+            <nav class="nav-links">
+                <a href="tela_historia.html">HISTORIA</a>
+                <a href="tela_quiz.html">QUIZ DE HONRA</a>
+                <a href="tela_reflexao.html">REFLEXÃO</a>
+                <a href="tela_login.html" class="entrar" id="linkPerfil">ENTRAR</a>
+                <a href="#" class="entrar" id="linkSair" onclick="limparSessao()" style="display: none;">SAIR</a>
+            </nav>
+        </section>
+    </header>
+
+    <div class="quiz">
+
+        <div class="quiz-caixa" id="telaInicio">
+            <p class="rotulo">QUIZ DE HONRA</p>
+            <h1>De que lado você ficaria na gangue?</h1>
+            <div class="linha"></div>
+            <p class="quiz-texto">São 10 dilemas do Velho Oeste. Em cada um, escolha o que você faria. Não existe resposta certa, só escolhas, e no final você descobre com qual personagem você mais se parece.</p>
+            <button class="botao-quiz" onclick="iniciarQuiz()">Começar</button>
+        </div>
+
+        <div class="quiz-caixa" id="telaQuiz" style="display: none;">
+            <p class="rotulo">DILEMA <span id="numeroQuestao"></span> DE <span id="totalQuestoes"></span></p>
+            <div class="barra">
+                <div class="barra-cheia" id="barraProgresso"></div>
+            </div>
+
+            <h2 id="textoPergunta"></h2>
+
+            <label class="opcao">
+                <input type="radio" name="opcao" id="ipt_opcaoA">
+                <span id="textoOpcaoA"></span>
+            </label>
+            <label class="opcao">
+                <input type="radio" name="opcao" id="ipt_opcaoB">
+                <span id="textoOpcaoB"></span>
+            </label>
+            <label class="opcao">
+                <input type="radio" name="opcao" id="ipt_opcaoC">
+                <span id="textoOpcaoC"></span>
+            </label>
+
+            <button class="botao-quiz" id="botaoResponder" onclick="responder()">Próxima</button>
+        </div>
+
+        <div class="quiz-caixa" id="telaResultado" style="display: none;">
+            <p class="rotulo">SEU RESULTADO</p>
+
+            <div class="resultado-topo">
+                <img id="imgPersonagem" src="" alt="">
+                <div>
+                    <h2 id="nomePersonagem"></h2>
+                    <div class="linha"></div>
+                    <p class="quiz-texto" id="descricaoPersonagem"></p>
+                </div>
+            </div>
+
+            <div class="resultado-numeros">
+                <div class="res-item">
+                    <p class="res-titulo">SEU NÍVEL</p>
+                    <p class="res-valor" id="nivelResultado"></p>
+                </div>
+                <div class="res-item">
+                    <p class="res-titulo">PONTUAÇÃO</p>
+                    <p class="res-valor" id="pontuacaoResultado"></p>
+                </div>
+            </div>
+
+            <button class="botao-quiz" onclick="verDashboard()">Ver minha dashboard</button>
+            <button class="botao-quiz botao-claro" onclick="refazerQuiz()">Refazer o quiz</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Feito por <a href="https://github.com/guilhermysantana" target="_blank">Guilhermy Santana</a> - CCOK @ São Paulo Tech School</p>
+    </footer>
+
+    <script src="js/sessao.js"></script>
+    <script>validarSessao()</script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
