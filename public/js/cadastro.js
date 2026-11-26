@@ -12,7 +12,7 @@ function cadastrar() {
     erro_email.innerHTML = ''
     erro_senha.innerHTML = ''
     erro_confsenha.innerHTML = ''
-    
+
     let valido = true
 
 
@@ -37,6 +37,12 @@ function cadastrar() {
         valido = false
     }
 
+    //Validação do email
+    if (!ipt_email.value.includes('@') || !ipt_email.value.includes('.')) {
+        erro_email.innerHTML = '<p style="color: #eb352f;">Digite um email válido</p>'
+        valido = false
+    }
+
     if (valido == false) {
         return
     }
@@ -50,7 +56,7 @@ function cadastrar() {
     }
 
     // Se tudo estiver certo
-        if (temTamanho && temNumero && temMinuscula && temMaiuscula && temEspecial) {
+    if (temTamanho && temNumero && temMinuscula && temMaiuscula && temEspecial) {
         fetch("/usuarios/cadastrar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },

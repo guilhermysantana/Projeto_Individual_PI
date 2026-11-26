@@ -35,11 +35,12 @@ function entrar() {
                 sessionStorage.ID_USUARIO = json.id
                 sessionStorage.NOME_USUARIO = json.nome
                 sessionStorage.EMAIL_USUARIO = json.email
-                erro.innerHTML = `<p style='color: green;'> <br>Iniciando Sessão!</p>`
+
+                erro.innerHTML = `<p style='color: green;'><br>Iniciando Sessão!</p>`
                 window.location.href = 'index.html'
             })
         } else {
-            erro.innerHTML = `<p style='color: red;'> <br>Credenciais incorretas! Tente novamente.</p>`
+            erro.innerHTML = `<p style='color: red;'><br>Credenciais incorretas! Tente novamente.</p>`
         }
     })
 }
