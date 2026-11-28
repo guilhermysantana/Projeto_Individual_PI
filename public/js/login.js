@@ -1,46 +1,70 @@
 function entrar() {
-    let email_usuario = ipt_email.value
-    let senha_usuario = ipt_senha.value
+    aguardar();
 
-    erro_email.innerHTML = ''
-    erro_senha.innerHTML = ''
-    erro.innerHTML = ''
+    var emailVar = ipt_email.value;
+    var senhaVar = ipt_senha.value;
 
-    let valido = true
+    erro_email.innerHTML = '';
+    erro_senha.innerHTML = '';
+    erro.innerHTML = '';
+    div_erros_login.innerHTML = '';
+    div_erros_login.style.display = 'none';
 
-    if (email_usuario == '') {
-        erro_email.innerHTML = '<p style="color: #eb352f;">Insira seu email</p>'
-        valido = false
+    var valido = true;
+
+    if (emailVar == '') {
+        erro_email.innerHTML = '<p style="color: #eb352f;">Insira seu email</p>';
+        valido = false;
     }
 
-    if (senha_usuario == '') {
-        erro_senha.innerHTML = '<p style="color: #eb352f;">Insira sua senha</p>'
-        valido = false
+    if (senhaVar == '') {
+        erro_senha.innerHTML = '<p style="color: #eb352f;">Insira sua senha</p>';
+        valido = false;
     }
 
     if (valido == false) {
-        return
+        finalizarAguardar();
+        return false;
     }
 
     fetch("/usuarios/autenticar", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify({
-            emailServer: email_usuario,
-            senhaServer: senha_usuario
+            emailServer: emailVar,
+            senhaServer: senhaVar
         })
     }).then(function (resposta) {
+
         if (resposta.ok) {
             resposta.json().then(function (json) {
-                sessionStorage.ID_USUARIO = json.id
-                sessionStorage.NOME_USUARIO = json.nome
-                sessionStorage.EMAIL_USUARIO = json.email
 
-                erro.innerHTML = `<p style='color: green;'><br>Iniciando Sessão!</p>`
-                window.location.href = 'index.html'
-            })
+                sessionStorage.EMAIL_USUARIO = json.email;
+                sessionStorage.NOME_USUARIO = json.nome;
+                sessionStorage.ID_USUARIO = json.id;
+
+                setTimeout(function () {
+                    window.location = "index.html";
+                }, 1000);
+
+            });
+
         } else {
-            erro.innerHTML = `<p style='color: red;'><br>Credenciais incorretas! Tente novamente.</p>`
+            resposta.text().then(function (texto) {
+                finalizarAguardar("Credenciais incorretas! Tente novamente.");
+            });
         }
-    })
+
+    }).catch(function (erro) {
+        console.log(erro);
+        finalizarAguardar("Não foi possível conectar ao servidor.");
+    });
+
+    return false;
+}
+
+function sumirMensagem() {
+    erro.innerHTML = '';
 }

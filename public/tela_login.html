@@ -2,22 +2,26 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset=" UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <header class="header">
     <section>
       <div class="logo">
         <a href="index.html">Red <span class="logo-red">Dead</span> Web</a>
       </div>
+
       <nav class="nav-links">
         <a href="tela_historia.html">HISTORIA</a>
         <a href="tela_quiz.html">QUIZ DE HONRA</a>
@@ -29,10 +33,12 @@
   </header>
 
   <div class="login">
+
     <p class="subtitulo">BEM-VINDO DE VOLTA</p>
     <h1>Entrar</h1>
 
     <div class="caixa">
+
       <label for="ipt_email">E-MAIL</label>
       <input type="text" id="ipt_email" placeholder="seuemail@exemplo.com">
       <p id="erro_email"></p>
@@ -41,23 +47,31 @@
       <input type="password" id="ipt_senha" placeholder="******">
       <p id="erro_senha"></p>
 
-
       <span class="erro" id="erro"></span>
 
-      <button onclick="entrar()" class="button-entrar">ENTRAR</button>
+      <div id="div_aguardar" class="loading-div" style="display: none;">
+        <img src="assets/circle-loading.gif" id="loading-gif">
+      </div>
 
+      <div id="div_erros_login"></div>
+      <button onclick="entrar()" class="button-entrar">ENTRAR</button>
       <p class="link-cadastro">
-        Novo por aqui? <a href="tela_cadastro.html" class="criar-conta">Criar conta</a>
+        Novo por aqui?
+        <a href="tela_cadastro.html" class="criar-conta">Criar conta</a>
       </p>
     </div>
   </div>
-
   <footer class="footer">
-    <p>Feito por <a href="https://github.com/guilhermysantana" target="_blank">Guilhermy Santana</a> - CCOK @ São Paulo
-      Tech School</p>
+    <p>
+      Feito por
+      <a href="https://github.com/guilhermysantana" target="_blank">
+        Guilhermy Santana
+      </a>
+      - CCOK @ São Paulo Tech School
+    </p>
   </footer>
+  <script src="js/sessao.js"></script>
   <script src="js/login.js"></script>
 </body>
-<script src="js/sessao.js"></script>
 
 </html>
